@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://www.gameuidatabase.com/uploads/Hades01242021-120213-26238.jpg);
+  background-size: cover;
+}
+
+#header {
+  overflow: hidden;
+  background-color: #2e3136;
+  position: static; /* sets the header to fixed position */
+  top: 0; /* sets header at the top of the page */
+  margin: 0;
+  padding: 0;
+  width: 100%; /* full width */
+  color: #cecfd0;
+  border: 3px groove #fb9902;
+  opacity: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#play {
+  font-size: 35px;
+  flex-grow: 2;
+  margin-left: 5px;
+  font-family: "Copperplate", fantasy;
+	font-weight: lighter;
+}
+
+#play::first-letter{
+  font-size: 42px;
+}
+
+#btns {
+  align-item: flex-end;
+  height: 100%;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.btns button {
+  font-family: "Copperplate", fantasy;
+  font-weight: lighter;
+  color: #cecfd0;
+  border: 3px solid #fb9902;
+  padding: 5px 20px;
+  margin: 3px;
+  font-size: 30px;
+  padding: 16px 46px;
+  cursor: pointer;
+  background: #2e3136;
+  position: relative;
+  height: 100%;
+  overflow: hidden; /* hides animation overflow */
+}
+/* animation that drags the linear gradient across the button, pseudo-element sets the gradient all the way on the left */
+.btns button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+  120deg,
+  transparent,
+  #cecfd0,
+    transparent
+  );
+  transition: all .6s;
+}
+/* pseudo-class hover drags the linear gradient all the way to the right, creating the illusion of a shiny animation */
+.btns button:hover::before{
+  left: 100%
+}
+
+.overlay {
+  position: static;
+  background-color: #1C1C1C;
+  opacity: 75%;
+  height: 150%;
+  width: 85%;
+  margin: auto;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#about {
+  padding: 50px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+#title {
+  color: #fb9902;
+  font-family: "Georgia", serif;
+  font-size: 55px;
+  font-weight: bolder;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.character {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+		filter: grayscale(1); /* grayscale filter */
+}
+/* pseudo-class that removes grayscale and enlarges sections*/
+.character:hover {
+	filter: grayscale(0);
+	transform: scale(1.2);
+}
+
+.image {
+	margin: auto;
+	padding: 12px;
+}
+
+
+
+.pic {
+	max-height: 400px;
+}
+
+.container {
+	background-color: #2e3136;
+	border: groove #fb9902;
+	align-self: center;
+	text-align: center;
+	width: 50%;
+	margin: auto;
+}
+
+.name {
+	color: #fb9902;
+	font-family: "Copperplate", fantasy;
+    font-size: 35px;
+}
+
+.role {
+	font-family: "Verdana", sans-serif;
+  font-weight: lighter;
+  color: #cecfd0;
+	font-size: 20px;
+}
+
+.description {
+	color: #cecfd0;
+  font-size: 16px;
+  font-family: "Georgia", serif;
+}
+
+.codex {
+	color: #cecfd0;
+  font-size: 14px;
+  font-family: "Georgia", serif;
+	text-decoration: underline;
+}
+
+#find {
+	color: #fb9902;
+	font-family: "Copperplate", fantasy;
+    font-size: 20px;
+	padding: 50px;
+	margin: auto;
+}
+
+span {
+	color: #cecfd0;
+	padding: 3px;
+}
+
+#footer {
+  background-color: #2e3136;
+  margin-right: 0%;
+  margin-left: auto;
+  bottom: 0;
+  height: 35px;
+  width: 100%;
+  position: fixed;
+  opacity: 75%;
+  text-align: center;
+}
+
+#contain {
+	display: flex;
+	justify-content: flex-end;
+	align-content: flex-start;
+}
+
+#myBtn {
+	text-align: center;
+	margin-right: auto; /* sets button all the way to the left */
+	font-size: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	background-color: transparent;
+}
+
+#supergiant {
+  position: absolute;
+  font-family: "Copperplate", fantasy;
+  font-weight: lighter;
+  color: #cecfd0;
+  font-size: 25px;
+	bottom: 0;
+  padding: 3px;
+	padding-right: 15%;
+  cursor: pointer;
+	align-self: flex-end;
+}
+
+#zagreus {
+  margin-left: 75%; /* sets image to the right */
+  height: 135px;
+  bottom: 0;
+  position: fixed;
+}
