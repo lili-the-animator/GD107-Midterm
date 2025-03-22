@@ -180,6 +180,7 @@ ul, li {
 }
 
 #myBtn {
+	color: #cecfd0;
 	text-align: center;
 	margin-right: auto; /* sets button all the way to the left */
 	font-size: 30px;
@@ -203,7 +204,7 @@ ul, li {
 }
 
 #zagreus {
-  margin-left: 75%; /* sets image to the right */
+  right: 0; /* sets image to the right */
   height: 135px;
   bottom: 0;
   position: fixed;
