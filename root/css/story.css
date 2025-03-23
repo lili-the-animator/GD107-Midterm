@@ -121,8 +121,8 @@ body {
 /* Centered text */
 .centered {
   position: absolute;
-  top: 35%;
-  left: 50%;
+  top: 50%;
+  left: 56%;
   transform: translate(-50%, -50%);
 }
 
@@ -139,6 +139,28 @@ body {
   font-size: 25px;
 	text-align: center;
 	line-height: 35px;
+	width: 75%;
+}
+
+.more {
+	position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#find {
+	color: #fb9902;
+	font-family: "Copperplate", fantasy;
+    font-size: 20px;
+	opacity: 85%;
+	margin: auto;
+	background-color: #2e3136;
+}
+
+span {
+	color: #cecfd0;
+	padding: 3px;
 }
 
 #footer {
