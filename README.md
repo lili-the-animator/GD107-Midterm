@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head contains meta tags and title of page -->
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0">
+    <meta name="description"
+          content="Information about Hades the Video Game">
+    <title>Play Hades the Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <!-- contains header title and navigation buttons -->
+    <header id="header">
+    <h1 id="play">Play Hades the Game</h1>
+    <nav>
+      <div class="btns" id="btns">
+		  <a href="gameplay.html"><button>Gameplay</button></a>
+		  <a href="story.html"><button>Story</button></a>
+		  <a href="characters.html"><button>Characters</button></a>
+      </div>
+    </nav>
+    </header>
+	  <img src="img/hades_logo.png" alt="Official Hades Logo" id="logo"/>
+    <main id="main">
+      <!-- insert official trailer YouTube video -->
+      <iframe width="500" height="395"
+src="https://www.youtube.com/embed/91t0ha9x0AE" alt="Official Hades Trailer" id="video">
+</iframe>
+      <article id="about">
+        <h2 id="title">A God-Like Rogue-Like</h2>
+        <p id="intro">Fight like Hell. Hack and slash your way through the Underworld in this rogue-like dungeon crawler. Receive assistance from the Olympian Gods as you defy the god of death himself, Hades. With thrilling gameplay, a compelling story, and charming characters, you'll be returning to play over and over again.</p>
+        <div class="btns" id="buttons">
+          <!-- insert buttons to link to other HTML pages -->
+          <a href="gameplay.html"><button>Gameplay</button></a>
+		  <a href="story.html"><button>Story</button></a>
+		  <a href="characters.html"><button>Characters</button></a>
+        </div>
+      </article>
+    </main>
+    <!-- section contains links to several stores where game may be purchased -->
+    <section id="stores">
+      <p id="available">Available On</p>
+      <!-- container for all store links for flexbox styling -->
+      <div id="links">
+        <ul>
+          <li class="links"><a href="https://store.steampowered.com/app/1145360/Hades/" target="_blank">Steam</a></li> 
+          <li>∣</li>
+          <li class="links"><a href="https://apps.apple.com/us/app/hades-netflix/id6450063142" target="_blank">App Store</a></li>
+          <li>∣</li>
+          <li class="links"><a href="https://www.xbox.com/en-us/games/store/hades/9P8DL6W0JBB8" target="_blank">Xbox Store</a></li>
+          <li>∣</li>
+          <li class="links"><a href="https://www.epicgames.com/store/en-US/product/hades/" target="_blank">EPIC Store</a></li>
+          <li>∣</li>
+          <li class="links"><a href="https://www.nintendo.com/us/store/products/hades-switch/" target="_blank">Nintendo eShop</a></li>
+          <li>∣</li>
+          <li class="links"><a href="https://store.playstation.com/en-us/product/UP2125-PPSA03355_00-3466019145463410" target="_blank">PlayStation Store</a></li>
+          </ul>
+      </div>
+    </section>
+    <!-- footer will have link to official Supergiant page and png image of main character -->
+    <footer id="footer">
+		<div id="contain">
+			<button id="myBtn">&#11121;</button> <!-- scroll to top button -->
+			<script src="js/top.js"></script> <!-- script for scroll to top button -->
+			<a href="https://www.supergiantgames.com/games/hades/" target="_blank" id="supergiant">Official Hades Page - Supergiant Games</a>
+		</div>
+    </footer>
+     <img src="img/zagreus.png" alt="Image of the main character, Zagreus" id="zagreus">
+  </body>
+</html>
